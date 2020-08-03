@@ -1,6 +1,10 @@
 def no_dups(s):
     # Your code here
+    arr = list(dict.fromkeys(s.split()))
+    #  arr = list(set(s.split()))
 
+    res = " ".join(arr)
+    return res
 
 
 if __name__ == "__main__":
